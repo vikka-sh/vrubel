@@ -1,0 +1,411 @@
+/** {
+    outline: 1px solid yellow;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Verdana, sans-serif;
+    background-color: #131313;
+
+
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+
+
+/* ШАПКА*/
+.site-header {
+    background-color: black;
+}
+
+
+.site-header .container {
+    min-height: 400px;
+    padding-top: 50px;
+    padding-bottom: 180px;
+
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 0px 130px;
+}
+
+
+.site-header2 .container {
+      padding-top: 50px;
+   
+}
+
+.main-nav {
+    display: flex;
+    margin-bottom: 95px;
+}
+
+.main-nav2 {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 60px;
+}
+
+.site-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-menu a {
+    display: block;
+    margin-right: 40px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #d4d4d4;
+}
+
+.site-menu a:hover {
+    color: white;
+}
+
+.site-menu a:active {
+    color: #ccc;
+}
+
+
+
+
+
+.about-us {
+    padding-top: 50px;
+
+    width: 600px;
+    padding-left: 100px;
+}
+h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ОСНОВНОЕ*/
+
+
+
+
+.features {
+    padding: 85px 0;
+    background: linear-gradient(-45deg, #000000, #091f18, #1C1C1C, #121e30);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.features-list {
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+    font-size: 19px;
+
+}
+
+
+
+
+/*ПОДВАЛ*/
+
+.site-footer {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    color: #ffffff;
+
+    background-color: black;
+}
+
+
+.footer-columns-container {
+    display: flex;
+}
+
+.footer-columns-container .left-column {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-right: 100px;
+}
+
+.footer-columns-container .right-column {
+    width: 720px;
+    padding-top: 35px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-container .logo {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.logo-container p {
+    font-size: 14px;
+}
+
+.copyrights {
+    margin-top: auto;
+
+    color: #555555;
+}
+
+
+
+
+
+.a-us {
+    width: 50%;
+    padding-left: 120px;
+}
+
+
+.a-us p {
+    margin: 0;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    white-space: pre;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+    font-size: 19px;
+    line-height: 40px;
+    font-style: italic;
+}
+
+
+/* Настройки маркированного списка */
+.hover-effect-cover {
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.hover-effect-cover li {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    margin: 20px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+
+}
+
+/* Заголовок, текст и ссылка */
+.hover-effect-cover li h3 {
+    color: #fff;
+    margin: 5px;
+}
+
+.hover-effect-cover li p {
+    color: #fff;
+    margin: 5px;
+}
+
+.hover-effect-cover li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.hover-effect-cover li a:hover {
+    background: #454545;
+    color: #fff;
+}
+
+
+/* Выезжающий блок с текстом для панели снизу вверх */
+.hover-effect-cover li > div.effect-to-top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hover-effect-cover li:hover > div.effect-to-top {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.hover-effect-cover li div.effect-to-top {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) rotate(0deg);
+    /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-top {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.picture img{
+    margin: 0 auto;
+    border: 2px solid white;
+    
+    
+}
+
+.picture h2{
+ text-align: center;  
+font-size: 30px;
+    line-height: 50px;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+}
+
+
+.picture p{
+ text-align: justify;  
+font-family: Century Gothic, sans-serif;
+    color: white;
+    font-size: 19px;
+   line-height: 40px;
+    
+}
+
+.picture p:first-of-type { text-indent: 70px; }
+
+
+/*Цитата*/
+blockquote {
+margin: 0;
+color: #131314;
+padding: 30px 30px 30px 90px;
+position: relative;
+font-family: 'Lato', sans-serif;
+}
+blockquote:before {
+content: "\201C";
+font-family: serif;
+position: absolute;
+top: 20px;
+left: 16px;
+color: black;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: white;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+line-height: 50px;
+}
+blockquote:after {
+content: "";
+width: 4px;
+background: white;
+position:absolute;
+left: 70px;
+top: 20px;
+bottom: 20px;
+}
+blockquote p {
+margin-top: 0;
+font-size: 24px;
+font-weight: 300;
+}
+blockquote cite {
+font-style: normal;
+text-transform: uppercase;
+color: aliceblue;
+    font-style: italic;
+}
+
+.v-666 p{
+    font-weight:bold;
+}
+
+
